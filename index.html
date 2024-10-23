@@ -12,23 +12,24 @@
 
 <body class="landing is-preload">
     <!-- Page Wrapper -->
-    <div id="page-wrapper">
+    <div id="page-wrapper" class="fiducie">
         <!-- Header -->
         <header id="header" class="alt absolute nav-bar">
             <nav id="nav">
                 <ul>
                     <li class="special">
-                        <a href="#menu" class="menuToggle"></a>
+                        <!-- Hamburger Button -->
+                        <div class="hamburger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <!-- Navigation Menu -->
                         <div id="menu">
                             <ul>
-                                <li><a href="#">
-                                        Club van 140
-                                    </a></li>
                                 <li><a href="index.html" class="active">Fiducie</a></li>
-                                <li><a href="#">Programma</a></li>
-                                <li>
-                                    <a href="theme.html">Thema</a>
-                                </li>
+                                <li><a href="programma.html">Programma</a></li>
+                                <li><a href="thema.html">Thema</a></li>
                                 <li><a href="#">Media</a></li>
                                 <li><a href="#">Reünisten</a></li>
                                 <li><a href="#">Partners</a></li>
@@ -43,16 +44,14 @@
         <!-- Banner -->
         <section id="banner">
             <div class="inner">
-                <!-- <h1>FIDUCIE</h1>
-                    <h3>ASR Nereus</h3> -->
                 <div class="banner-container">
                     <video id="banner-video" autoplay muted loop>
-                        <source src="images/vid_logo.mp4" type="video/mp4">
+                        <source id="video-source" src="images/vid_logo.mp4" type="video/mp4">
+                        Your browser does not support the video tag. <!-- Fallback message for unsupported browsers -->
                     </video>
                 </div>
-
             </div>
-            <a href="#one" class="more scrolly"></a>
+            <!-- <a href="#one" class="more scrolly"></a> -->
         </section>
 
         <!-- One -->
@@ -82,25 +81,29 @@
                         </p>
 
                         <!-- add link to theme.html -->
-                        <button class="button primary" onclick="window.location.href='theme.html'">Check het
+                        <button class="button primary" onclick="window.location.href='thema.html'">Check het
                             thema</button>
 
                         <!-- <br />
                         <br /> -->
 
                         <div class="slinger">
-                            <img src="images/Slinger.png" alt="Slinger" />
+                            <img src="images/Slinger2.png" alt="Slinger" />
+                            <img src="images/Slinger2.png" alt="Slinger" />
                         </div>
 
                         <!-- insert video -->
                         <!-- <br />
                         <br />
                         <br /> -->
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/tU1AK3fDMjo?si=5bqHXS_nH2WM11PL"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="video-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/tU1AK3fDMjo?si=5bqHXS_nH2WM11PL"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
                     </header>
                 </div>
             </section>
@@ -110,8 +113,8 @@
             <div class="inner">
                 <header>
                     <div class="header-container">
-                        <h2>Opkomende events</h2>
-                        <button class="button primary" onclick="window.location.href='events.html'">Bekijk alle
+                        <h1>Opkomende events</h1>
+                        <button class="button primary white" onclick="window.location.href='events.html'">Bekijk alle
                             events</button>
                     </div>
                     <div class="event-container">
@@ -198,147 +201,21 @@
                     <br>
                 </div>
             </section>
-            <!-- <section class="spotlight">
-                    <div class="image">
-                        <img src="images/blauw_banner.png" alt="" />
-                    </div>
-                    <div class="content">
-                        <h2>
-                            Augue eleifend aliquet<br />
-                            sed condimentum
-                        </h2>
-                        <p>
-                            Aliquam ut ex ut augue consectetur interdum. Donec
-                            hendrerit imperdiet. Mauris eleifend fringilla
-                            nullam aenean mi ligula.
-                        </p>
-                    </div>
-                </section> -->
+
         </section>
 
-        <!-- Three -->
-        <!-- <section id="three" class="wrapper style3 special">
-                <div class="inner">
-                    <header class="major">
-                        <h2>Accumsan mus tortor nunc aliquet</h2>
-                        <p>
-                            Aliquam ut ex ut augue consectetur interdum. Donec
-                            amet imperdiet eleifend<br />
-                            fringilla tincidunt. Nullam dui leo Aenean mi
-                            ligula, rhoncus ullamcorper.
-                        </p>
-                    </header>
-                    <ul class="features">
-                        <li class="icon fa-paper-plane">
-                            <h3>Arcu accumsan</h3>
-                            <p>
-                                Augue consectetur sed interdum imperdiet et
-                                ipsum. Mauris lorem tincidunt nullam amet leo
-                                Aenean ligula consequat consequat.
-                            </p>
-                        </li>
-                        <li class="icon solid fa-laptop">
-                            <h3>Ac Augue Eget</h3>
-                            <p>
-                                Augue consectetur sed interdum imperdiet et
-                                ipsum. Mauris lorem tincidunt nullam amet leo
-                                Aenean ligula consequat consequat.
-                            </p>
-                        </li>
-                        <li class="icon solid fa-code">
-                            <h3>Mus Scelerisque</h3>
-                            <p>
-                                Augue consectetur sed interdum imperdiet et
-                                ipsum. Mauris lorem tincidunt nullam amet leo
-                                Aenean ligula consequat consequat.
-                            </p>
-                        </li>
-                        <li class="icon solid fa-headphones-alt">
-                            <h3>Mauris Imperdiet</h3>
-                            <p>
-                                Augue consectetur sed interdum imperdiet et
-                                ipsum. Mauris lorem tincidunt nullam amet leo
-                                Aenean ligula consequat consequat.
-                            </p>
-                        </li>
-                        <li class="icon fa-heart">
-                            <h3>Aenean Primis</h3>
-                            <p>
-                                Augue consectetur sed interdum imperdiet et
-                                ipsum. Mauris lorem tincidunt nullam amet leo
-                                Aenean ligula consequat consequat.
-                            </p>
-                        </li>
-                        <li class="icon fa-flag">
-                            <h3>Tortor Ut</h3>
-                            <p>
-                                Augue consectetur sed interdum imperdiet et
-                                ipsum. Mauris lorem tincidunt nullam amet leo
-                                Aenean ligula consequat consequat.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </section> -->
-        <!-- CTA -->
-        <!-- <section id="cta" class="wrapper style5">
-                <div class="inner">
-                    <header>
-                        <h2>Arcue ut vel commodo</h2>
-                        <p>
-                            Aliquam ut ex ut augue consectetur interdum endrerit
-                            imperdiet amet eleifend fringilla.
-                        </p>
-                    </header>
-                    <ul class="actions stacked">
-                        <li>
-                            <a href="#" class="button fit primary">Activate</a>
-                        </li>
-                        <li><a href="#" class="button fit">Learn More</a></li>
-                    </ul>
-                </div>
-            </section> -->
-
-        <!-- Footer -->
-        <!-- <footer id="footer">
-                <ul class="icons">
-                    <li>
-                        <a href="#" class="icon brands fa-twitter"
-                            ><span class="label">Twitter</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#" class="icon brands fa-facebook-f"
-                            ><span class="label">Facebook</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#" class="icon brands fa-instagram"
-                            ><span class="label">Instagram</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#" class="icon brands fa-dribbble"
-                            ><span class="label">Dribbble</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#" class="icon solid fa-envelope"
-                            ><span class="label">Email</span></a
-                        >
-                    </li>
-                </ul>
-            </footer> -->
 
         <footer>
             <div class="foot">
                 <div class="footer-container">
                     <div class="footer-column">
                         <h3>Fiducie</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</strong></p>
                     </div>
                     <div class="footer-column">
+
                         <h3>Contact</h3>
+                        <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</strong></p>
                         <p>A.S.R. Nereus</p>
                         <p>Amsterdam</p>
                         <p>Phone: 01234 567890</p>
@@ -370,6 +247,9 @@
     </div>
 
     <!-- Scripts -->
+    <script src="assets/js/slinger.js"></script>
+    <script src="assets/js/banner.js"></script>
+    <script src="assets/js/menu.js"></script>
     <script src="assets/js/nav-bar.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
