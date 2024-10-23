@@ -392,11 +392,12 @@ footer {
 .footer-container {
 	display: flex;
 	justify-content: space-between;
-	max-width: 1000px;
+	/* max-width: 1000px; */
 	/* Adjust the width as needed */
 	margin: 0 auto;
 	/* overflow: flex; */
 	overflow: hidden;
+	width: 80%;
 }
 
 
@@ -435,7 +436,7 @@ footer {
 
 	.footer-column p {
 		margin: auto;
-		font-size: initial;
+		/* font-size: initial; */
 	}
 
 }
@@ -612,6 +613,13 @@ p {
 	font-size: 15px;
 	font-weight: normal;
 	color: black;
+}
+
+/* change font for phone */
+@media screen and (max-width: 736px) {
+	p {
+		font-size: 12px;
+	}
 }
 
 h4 {
@@ -3421,7 +3429,7 @@ button:disabled,
 }
 
 .wrapper.style10.special>.inner h1 {
-	font-size: 3em;
+	font-size: 2.8em;
 	width: 100%;
 	overflow: hidden;
 }
