@@ -119,6 +119,7 @@ video {
 	/* font-weight: bold;  */
 	/* font: inherit; */
 	vertical-align: baseline;
+	/* width: 100%; */
 }
 
 article,
@@ -395,6 +396,7 @@ footer {
 	/* Adjust the width as needed */
 	margin: 0 auto;
 	/* overflow: flex; */
+	overflow: hidden;
 }
 
 
@@ -2858,6 +2860,10 @@ ul.icons.major li {
 	justify-content: space-between;
 }
 
+.header-container h2 {
+	margin-right: 40px;
+}
+
 @media screen and (max-width: 736px) {
 
 	.header-container {
@@ -3361,7 +3367,7 @@ button:disabled,
 }
 
 .wrapper>.inner .video-container {
-	width: 60em;
+	width: 80%;
 	height: auto;
 	/* VERANDEREN */
 	margin: 0 auto;
@@ -3401,7 +3407,7 @@ button:disabled,
 }
 
 .wrapper.style10.special>.inner {
-	width: 60em;
+	/* width: 60em; */
 	/* VERANDEREN */
 	margin: 0 auto;
 	position: relative;
@@ -3414,6 +3420,12 @@ button:disabled,
 	position: relative;
 }
 
+.wrapper.style10.special>.inner h1 {
+	font-size: 3em;
+	width: 100%;
+	overflow: hidden;
+}
+
 .special.wrap {
 	background-color: white;
 }
@@ -3421,6 +3433,8 @@ button:disabled,
 .wrapper.style1.special {
 	border-bottom-left-radius: 100px;
 	border-bottom-right-radius: 100px;
+	width: 100%;
+	overflow: hidden;
 }
 
 @media screen and (max-width: 980px) {
@@ -3477,10 +3491,19 @@ button:disabled,
 
 .wrapper.style1 header.major p {
 	color: black;
-	/* width: 80%; */
+	/* width: 100%; */
 	margin: auto;
 	margin-bottom: 3em;
 	text-align: center;
+}
+
+/* for phone */
+@media screen and (max-width: 736px) {
+
+	.wrapper.style1 header.major p {
+		width: 100%;
+	}
+
 }
 
 .wrapper.style1 label {
@@ -4312,7 +4335,7 @@ body.is-menu-visible #menu {
 	/* align-items: center; */
 	width: 100%;
 	/* Make the video container take up the full width */
-	max-width: 100vw;
+	/* max-width: 100vw; */
 	/* Ensure it does not exceed the screen width */
 	padding-bottom: 56.25%;
 	/* This maintains the 16:9 aspect ratio (height / width = 9 / 16 = 0.5625) */
@@ -4325,9 +4348,24 @@ body.is-menu-visible #menu {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	border: 0;
 	/* Optional: Remove the border if there’s one */
+}
+
+/* if on phone, change size */
+@media screen and (max-width: 736px) {
+
+	.video-container {
+		padding-bottom: 100%;
+	}
+
+	.video-container iframe {
+		height: 100%;
+		width: 100%;
+	}
+
+
 }
 
 .slinger {
