@@ -3969,10 +3969,10 @@ button:disabled,
 	text-align: center;
 }
 
-/* .colors h2 {
-	font-size: 1.5em;
+.colors h2 {
+	/* font-size: 1.5em; */
 	color: white;
-} */
+}
 
 .colors p {
 	width: 100%;
@@ -4291,6 +4291,7 @@ body.is-menu-visible #menu {
 	position: relative;
 	width: 100%;
 	height: 100%;
+	/* height: 0; */
 	/* Adjust the height as needed */
 	overflow: wrap;
 }
