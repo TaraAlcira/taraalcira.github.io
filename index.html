@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
@@ -19,10 +21,12 @@
                 <ul>
                     <li class="special">
                         <!-- Hamburger Button -->
-                        <div class="hamburger">
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                        <div class="hamburger-container">
+                            <div class="hamburger">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
                         </div>
                         <!-- Navigation Menu -->
                         <div id="menu">
@@ -85,16 +89,25 @@
                         <!-- add link to theme.html -->
                         <button class="button primary" onclick="window.location.href='thema.html'">Check het
                             thema</button>
-
-
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
                         <div class="slinger">
                             <img src="images/Slinger2.png" alt="Slinger" />
                             <img src="images/Slinger2.png" alt="Slinger" />
+                            <img src="images/Slinger2.png" alt="Slinger" />
                         </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
 
                         <div class="video-container">
-                            <iframe width="560" height="200"
-                                src="https://www.youtube.com/embed/tU1AK3fDMjo?si=5bqHXS_nH2WM11PL"
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/4XoMK3NLQi0?si=_5cW_r33RFCKkFPu?controls=0"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -170,9 +183,14 @@
             <section class="spotlight">
 
                 <div class="content">
-                    <h2>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h1>
                         Uitgelicht event
-                    </h2>
+                    </h1>
                     <!-- <p>
                             Aliquam ut ex ut augue consectetur interdum. Donec
                             hendrerit imperdiet. Mauris eleifend fringilla
@@ -195,50 +213,28 @@
                     <br>
                     <br>
                     <br>
+                    <br>
+                    <br>
                 </div>
             </section>
 
         </section>
 
 
-        <footer>
-            <div class="foot">
-                <div class="footer-container">
-                    <div class="footer-column">
-                        <h3>Fiducie</h3>
-                        <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</strong></p>
-                    </div>
-                    <div class="footer-column">
+        <div id="footer-placeholder"></div>
 
-                        <h3>Contact</h3>
-                        <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</strong></p>
-                        <p>A.S.R. Nereus</p>
-                        <p>Amsterdam</p>
-                        <p>Phone: 01234 567890</p>
-                        <p>Email: [info@asrnereus.nl](mailto:info@asrnereus.nl)</p>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Sponsoren</h3>
-                        <!--    <img src="we-are-pi-logo.png" alt="We Are Pi Logo">  
-                        <img src="frascati-logo.png" alt="Frascati Logo">  
-                        <img src="nederlands-film-festival-logo.png" alt="Nederlands Film Festival Logo">   -->
-                        <!-- Repeat the logos as needed -->
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>ASR NEREUS</p>
-                <p>DESIGN: BUREAU GROTESK</p>
-            </div>
-            <!-- <div class="social-media-icons">  
-                 <img src="facebook-icon.png" alt="Facebook Icon">  
-                 <img src="twitter-icon.png" alt="Twitter Icon">  
-                 <img src="instagram-icon.png" alt="Instagram Icon">   -->
-            <!--   Add more social media icons as needed -->
-            <!-- </div>   -->
-        </footer>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script>
+            // Load footer content from footer.html
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch("footer.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("footer-placeholder").innerHTML = data;
+                    });
+            });
+        </script>
 
     </div>
 
