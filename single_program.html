@@ -2,49 +2,126 @@
 <html>
 
 <head>
-    <title>Event Details</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 </head>
 
-<body>
-    <div id="event-details">
-        <h1 id="event-title"></h1>
-        <p id="event-date"></p>
-        <img id="event-image" alt="Event Image">
-        <p id="event-description"></p>
+<body class="landing is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper" class="fiducie">
+        <!-- Header -->
+        <header id="header" class="alt absolute nav-bar">
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <!-- Hamburger Button -->
+                        <div class="hamburger-container">
+                            <div class="hamburger">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <!-- Navigation Menu -->
+                        <div id="menu">
+                            <ul>
+                                <li><a href="index.html">Fiducie</a></li>
+                                <li><a href="programma.html" class="active">Programma</a></li>
+                                <li><a href="thema.html">Thema</a></li>
+                                <li><a href="media.html">Media</a></li>
+                                <li><a href="reunisten.html">Reünisten</a></li>
+                                <li><a href="partners.html">Partners</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="cta" class="wrapper style8 two"></section>
+        <div class="inner">
+        </div>
+        </section>
+
+        <div class="special wrap">
+            <section id="one" class="wrapper style8 special">
+                <div class="inner">
+                    <header class="major">
+                        <!-- <h2>Thema</h2> -->
+                        <div id="event-details">
+                            <h2 id="event-date"></h2>
+                            <h1 id="event-title"></h1>
+                            <p id="event-description"></p>
+                            <br>
+                            <!-- <img id="event-image" alt="Event Image"> -->
+
+                        </div>
+
+
+                    </header>
+                </div>
+
+
+                <script>
+                    // Function to get URL parameters
+                    function getParameterByName(name) {
+                        const url = new URL(window.location.href);
+                        return url.searchParams.get(name);
+                    }
+
+                    // Fetch JSON and load event data
+                    async function loadEventData() {
+                        const eventId = getParameterByName("id");
+                        try {
+                            const response = await fetch("events.json");
+                            const events = await response.json();
+                            const event = events.find(e => e.id === eventId);
+
+                            if (event) {
+                                document.getElementById("event-title").textContent = event.title;
+                                document.getElementById("event-date").textContent = event.date;
+                                document.getElementById("event-description").textContent = event.description;
+                                document.getElementById("event-image").src = event.image;
+                            } else {
+                                document.getElementById("event-details").innerHTML = "<p>Event not found.</p>";
+                            }
+                        } catch (error) {
+                            console.error("Error loading event data:", error);
+                        }
+                    }
+
+                    // Load event data on page load
+                    loadEventData();
+                </script>
+            </section>
+        </div>
+        </section>
     </div>
 
-    <script>
-        // Function to get URL parameters
-        function getParameterByName(name) {
-            const url = new URL(window.location.href);
-            return url.searchParams.get(name);
-        }
 
-        // Fetch JSON and load event data
-        async function loadEventData() {
-            const eventId = getParameterByName("id");
-            try {
-                const response = await fetch("events.json");
-                const events = await response.json();
-                const event = events.find(e => e.id === eventId);
+    </section>
 
-                if (event) {
-                    document.getElementById("event-title").textContent = event.title;
-                    document.getElementById("event-date").textContent = event.date;
-                    document.getElementById("event-description").textContent = event.description;
-                    document.getElementById("event-image").src = event.image;
-                } else {
-                    document.getElementById("event-details").innerHTML = "<p>Event not found.</p>";
-                }
-            } catch (error) {
-                console.error("Error loading event data:", error);
-            }
-        }
+    <!-- Scripts -->
+    <script src="assets/js/slinger.js"></script>
+    <script src="assets/js/banner.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/nav-bar.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-        // Load event data on page load
-        loadEventData();
-    </script>
+
 </body>
 
 </html>

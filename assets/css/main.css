@@ -3438,6 +3438,12 @@ button:disabled,
 	max-width: 1100px;
 }
 
+.wrapper.style8.special>.inner {
+	margin: 0 auto;
+	position: relative;
+	max-width: 1100px;
+}
+
 .wrapper.style1.special>.inner {
 	margin: 0 auto;
 	position: relative;
@@ -4175,8 +4181,53 @@ h3 {
 	width: 60em;
 }
 
+.wrapper.style8 {
+	background-color: white;
+	color: black;
+	text-align: left;
+	padding: 2em;
+}
+
+.wrapper.style8 h1 {
+	color: red;
+	text-align: left;
+}
+
+.wrapper.style8 p,
+h2,
+h3 {
+	color: black;
+	text-align: left;
+	margin: 0 !important;
+}
+
+.wrapper.style8 .colors {
+	background-color: #50000A;
+	color: black;
+	text-align: left;
+	max-width: 1100px;
+}
+
+.wrapper.style8 header.major .colors p {
+	width: 100%;
+	text-align: left;
+}
+
+.wrapper.style8 header.major p {
+	/* color: #50000A; */
+	width: 80%;
+	margin-bottom: 3em;
+	text-align: left;
+	max-width: 1100px;
+}
+
 .wrapper.style7.two {
 	background: linear-gradient(0deg, #1718FF 0%, rgba(255, 255, 255, 0) 100%);
+	height: 400px;
+}
+
+.wrapper.style8.two {
+	background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0) 100%);
 	height: 400px;
 }
 
