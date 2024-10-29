@@ -229,7 +229,7 @@ h1 {
 
 .event-card h3 {
 	/* background-color: #333;   */
-	color: black;
+	color: #50000A;
 	padding: 5px 10px;
 	margin: 0;
 }
@@ -238,12 +238,12 @@ h1 {
 	padding: 10px;
 	margin: 0;
 	/* font-size: 1.5em; */
-	color: black;
+	color: #50000A;
 }
 
 .event-card p {
 	padding: 0 10px;
-	color: black;
+	color: #50000A;
 }
 
 .event-button {
@@ -625,7 +625,7 @@ h6 a {
 p {
 	font-size: 15px;
 	font-weight: normal;
-	color: black;
+	color: #50000A;
 }
 
 /* change font for phone */
@@ -638,13 +638,13 @@ p {
 h4 {
 	font-size: 20px;
 	font-weight: normal;
-	color: black;
+	color: #50000A;
 }
 
 h3 {
 	font-size: 20px;
 	font-weight: bold;
-	color: black;
+	color: #50000A;
 }
 
 h2 {
@@ -3472,12 +3472,61 @@ button:disabled,
 	background-color: white;
 }
 
+.special.wrap.invis {
+	background-color: #ffffff00;
+}
+
 .wrapper.style1.special {
 	border-bottom-left-radius: 100px;
 	border-bottom-right-radius: 100px;
 	width: 100%;
-	overflow: hidden;
+	padding: 2em;
 }
+
+.wrapper.style1.special .event-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	text-align: left;
+}
+
+.wrapper.style1.special .event-container p,
+h2,
+h3 {
+	width: 100%;
+	text-align: left;
+}
+
+.wrapper.style1.special.prog .event-container {
+	color: #50000A !important;
+}
+
+.wrapper.style1 button {
+	background-color: #FF0000;
+	color: white;
+}
+
+.wrapper.style1 button:hover {
+	background-color: #50000A !important;
+	color: white !important;
+	border-color: red !important;
+	border-width: 1mm !important;
+
+}
+
+.wrapper.style1 .filter-buttons button {
+	background-color: #ffbcff;
+	color: red;
+	border-color: red;
+	/* border-width: 3em; */
+}
+
+.wrapper.style1 .filter-buttons button:hover {
+	background-color: #FF0000 !important;
+	color: white !important;
+}
+
+
 
 @media screen and (max-width: 980px) {
 
@@ -3494,18 +3543,18 @@ button:disabled,
 	text-align: center;
 }
 
-.wrapper.style1 strong,
+/* .wrapper.style1 strong,
 .wrapper.style1 b {
 	color: #ffffff;
-}
+} */
 
-.wrapper.style1 h2,
+/* .wrapper.style1 h2,
 .wrapper.style1 h3,
 .wrapper.style1 h4,
 .wrapper.style1 h5,
 .wrapper.style1 h6 {
 	color: #FF0000;
-}
+} */
 
 .wrapper.style1 hr {
 	border-color: rgba(0, 0, 0, 0.125);
@@ -3532,10 +3581,8 @@ button:disabled,
 }
 
 .wrapper.style1 header.major p {
-	color: black;
-	/* width: 100%; */
+	color: #50000A;
 	margin: auto;
-	margin-bottom: 3em;
 	text-align: center;
 }
 
@@ -4036,7 +4083,7 @@ button:disabled,
 }
 
 .wrapper.style6 header.major p {
-	/* color: black; */
+	/* color: #50000A; */
 	width: 80%;
 	margin: auto;
 	margin-bottom: 3em;

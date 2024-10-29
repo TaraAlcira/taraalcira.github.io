@@ -35,10 +35,10 @@
                                 <li><a href="index.html">Fiducie</a></li>
                                 <li><a href="programma.html">Programma</a></li>
                                 <li><a href="thema.html" class="active">Thema</a></li>
-                                <li><a href="#">Media</a></li>
-                                <li><a href="#">Reünisten</a></li>
-                                <li><a href="#">Partners</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="media.html">Media</a></li>
+                                <li><a href="reunisten.html">Reünisten</a></li>
+                                <li><a href="partners.html">Partners</a></li>
+                                <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
                     </li>
@@ -51,7 +51,7 @@
             <div class="inner">
                 <div class="banner-container">
                     <div style="padding:56.25% 0 0 0;position:relative;"><iframe
-                            src="https://player.vimeo.com/video/1022099697?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479?autoplay=1&loop=1&background=1"
+                            src="https://player.vimeo.com/video/1022964755?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479?autoplay=1&loop=1&background=1"
                             frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                             style="position:absolute;top:0;left:0;width:100%;height:100%;"
                             title="Nereus Lustrum Fiduci - Bureau Grotesk"></iframe></div>
@@ -66,7 +66,7 @@
             <section id="one" class="wrapper style6 special">
                 <div class="inner">
                     <header class="major">
-                        <h2>Fiducie</h2>
+                        <h1>Fiducie</h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Sed maximus ligula quis ante hendrerit, nec
@@ -170,49 +170,21 @@
             </section>
         </div>
 
-        <footer class="thema">
-            <div class="foot thema">
-                <div class="footer-container">
-                    <div class="footer-column">
-                        <h3>Fiducie</h3>
-                        <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</strong></p>
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Contact</h3>
-                        <p><strong>Heb je vragen over het lustrum, ben je je roeiboot kwijt, of je fietssleutel. Stuur
-                                ons een berichtje en lees de FAQ:</strong></p>
-                        <br>
+        <div id="footer-placeholder"></div>
 
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script>
+            // Load footer content from footer.html
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch("footer_pink.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("footer-placeholder").innerHTML = data;
+                    });
+            });
+        </script>
 
-                        <p><strong>A.S.R. Nereus</strong></p>
-                        <p>Amsteldijk 130A</p>
-                        <p>1078 RT, Amsterdam</p>
-                        <!-- call -->
-                        <p><strong>Telefoon:</strong> 020 662 14 00</p>
-                        <!-- email -->
-                        <p><strong>Email:</strong> lustrum@nereus.nl</p>
-
-                    </div>
-                    <div class="footer-column">
-                        <h3>Sponsoren</h3>
-                        <!-- Add logos or any other sponsor information here -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>ASR NEREUS</p>
-                <p>DESIGN: BUREAU GROTESK</p>
-            </div>
-            <!-- <div class="social-media-icons">  
-                 <img src="facebook-icon.png" alt="Facebook Icon">  
-                 <img src="twitter-icon.png" alt="Twitter Icon">  
-                 <img src="instagram-icon.png" alt="Instagram Icon">   -->
-            <!--   Add more social media icons as needed -->
-            <!-- </div>   -->
-        </footer>
 
     </div>
 
