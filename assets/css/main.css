@@ -3463,7 +3463,7 @@ button:disabled,
 }
 
 .wrapper.style10.special>.inner h1 {
-	font-size: 2.8em;
+	/* font-size: 2.8em; */
 	width: 100%;
 	overflow: hidden;
 }
