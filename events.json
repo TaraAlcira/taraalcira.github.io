@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "title": "Skivakantie",
+        "date": "ZA 04-06",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis ante hendrerit.",
+        "image": "images/ski-vacation.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Kroketten eetwedstrijd",
+        "date": "VRIJ 24-08",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis ante hendrerit.",
+        "image": "images/eating-contest.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Debat",
+        "date": "WOE 24-6",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis ante hendrerit.",
+        "image": "images/debate.jpg"
+    }
+]

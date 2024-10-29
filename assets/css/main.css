@@ -371,6 +371,10 @@ footer {
 	background-color: #FFBCFF
 }
 
+footer.blue {
+	background-color: #0000FF;
+}
+
 .foot {
 	background-color: #FFFFFF;
 	border-radius: 80px 80px 0 0;
@@ -2294,9 +2298,9 @@ header h6+p {
 	font-size: 0.9em;
 }
 
-header.major {
+/* header.major {
 	margin: 0 0 3.5em 0;
-}
+} */
 
 header.major h2,
 header.major h3,
@@ -3423,12 +3427,21 @@ button:disabled,
 }
 
 .wrapper.style6.special>.inner {
-	/* width: 60em; */
-	/* VERANDEREN */
 	margin: 0 auto;
 	position: relative;
 	max-width: 1100px;
-	/* width: 60em; */
+}
+
+.wrapper.style7.special>.inner {
+	margin: 0 auto;
+	position: relative;
+	max-width: 1100px;
+}
+
+.wrapper.style1.special>.inner {
+	margin: 0 auto;
+	position: relative;
+	max-width: 1100px;
 }
 
 .wrapper.style6.special>.inner p {
@@ -3500,6 +3513,35 @@ h3 {
 .wrapper.style1.special.prog .event-container {
 	color: #50000A !important;
 }
+
+.wrapper.style7.special .event-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	text-align: left;
+}
+
+.wrapper.style7.special.reun .event-container p,
+h2,
+h3 {
+	width: 100%;
+	text-align: left;
+	color: white;
+}
+
+.wrapper.style7.special.reun .event-container h2,
+h3 {
+	color: white !important;
+}
+
+.wrapper.style7.special.reun button {
+	background-color: #FFBCFF;
+	color: #0000FF;
+}
+
+/* .wrapper.style7.special.reun .event-container {
+	color: white !important;
+} */
 
 .wrapper.style1 button {
 	background-color: #FF0000;
@@ -3886,6 +3928,11 @@ h3 {
 	height: 400px;
 }
 
+.wrapper.style6.two {
+	background: linear-gradient(0deg, #50000A 0%, rgba(255, 255, 255, 0) 100%);
+	height: 600px;
+}
+
 @media screen and (max-width: 980px) {
 
 	.wrapper.style4.two {
@@ -4070,6 +4117,10 @@ h3 {
 	text-align: center;
 }
 
+.wrapper.style6 h1 {
+	color: #ffbcff;
+}
+
 .wrapper.style6 .colors {
 	background-color: #50000A;
 	color: white;
@@ -4090,6 +4141,43 @@ h3 {
 	text-align: center;
 	max-width: 1100px;
 	width: 60em;
+}
+
+.wrapper.style7 {
+	background-color: #1718FF;
+	color: white;
+	text-align: center;
+}
+
+.wrapper.style7 h1 {
+	color: white;
+}
+
+.wrapper.style7 .colors {
+	background-color: #50000A;
+	color: white;
+	text-align: left;
+	max-width: 1100px;
+}
+
+.wrapper.style7 header.major .colors p {
+	width: 100%;
+	text-align: left;
+}
+
+.wrapper.style7 header.major p {
+	/* color: #50000A; */
+	width: 80%;
+	margin: auto;
+	margin-bottom: 3em;
+	text-align: center;
+	max-width: 1100px;
+	width: 60em;
+}
+
+.wrapper.style7.two {
+	background: linear-gradient(0deg, #1718FF 0%, rgba(255, 255, 255, 0) 100%);
+	height: 400px;
 }
 
 .colors h2 {
@@ -4972,6 +5060,23 @@ body.landing #page-wrapper.programma {
 	padding-top: 0;
 }
 
+body.landing #page-wrapper.media {
+	background-image: url("../../images/debate.jpg");
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 0;
+}
+
+body.landing #page-wrapper.reunist {
+	background-image: url("../../images/blue-pink-nereus.png");
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 0;
+}
 
 
 body.landing #footer {

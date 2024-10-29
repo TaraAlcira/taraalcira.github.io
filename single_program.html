@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Details</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div id="event-details">
+        <h1 id="event-title"></h1>
+        <p id="event-date"></p>
+        <img id="event-image" alt="Event Image">
+        <p id="event-description"></p>
+    </div>
+
+    <script>
+        // Function to get URL parameters
+        function getParameterByName(name) {
+            const url = new URL(window.location.href);
+            return url.searchParams.get(name);
+        }
+
+        // Fetch JSON and load event data
+        async function loadEventData() {
+            const eventId = getParameterByName("id");
+            try {
+                const response = await fetch("events.json");
+                const events = await response.json();
+                const event = events.find(e => e.id === eventId);
+
+                if (event) {
+                    document.getElementById("event-title").textContent = event.title;
+                    document.getElementById("event-date").textContent = event.date;
+                    document.getElementById("event-description").textContent = event.description;
+                    document.getElementById("event-image").src = event.image;
+                } else {
+                    document.getElementById("event-details").innerHTML = "<p>Event not found.</p>";
+                }
+            } catch (error) {
+                console.error("Error loading event data:", error);
+            }
+        }
+
+        // Load event data on page load
+        loadEventData();
+    </script>
+</body>
+
+</html>
