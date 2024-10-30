@@ -3459,9 +3459,16 @@ button:disabled,
 	max-width: 1100px;
 }
 
+.wrapper.style10.special.partners>.inner {
+	max-width: 1100px;
+	text-align: center;
+}
+
+
 .wrapper.style1.special.partners>.inner h2:first-of-type {
 	color: #50000A;
 }
+
 
 .wrapper.style1.special.partners>.inner h2 {
 	color: red;
@@ -4202,7 +4209,7 @@ h3 {
 
 .wrapper.style8 {
 	background-color: white;
-	color: black;
+	color: #50000A;
 	text-align: left;
 	padding: 2em;
 }
@@ -4215,14 +4222,14 @@ h3 {
 .wrapper.style8 p,
 h2,
 h3 {
-	color: black;
+	color: #50000A;
 	text-align: left;
 	margin: 0 !important;
 }
 
 .wrapper.style8 .colors {
 	background-color: #50000A;
-	color: black;
+	color: #50000A;
 	text-align: left;
 	max-width: 1100px;
 }
