@@ -248,13 +248,28 @@ h1 {
 
 .event-button {
 	background-color: #FFBCFF;
-	color: white;
-	border: none;
+	color: #50000A;
+	/* border: none; */
 	padding: 0px 20px;
 	margin: 10px;
 	border-radius: 25px;
 	cursor: pointer;
 }
+
+.event-button.opkom {
+	border: none;
+}
+
+.event-button.partner {
+	color: white;
+	background-color: red;
+}
+
+.event-button.partner:hover {
+	color: red;
+	background-color: transparent;
+}
+
 
 @media screen and (max-width: 736px) {
 	.event-container {
@@ -272,7 +287,7 @@ h1 {
 .boksgala-card {
 	background-color: #50000A;
 	/* Deep burgundy color */
-	padding: 40px;
+	padding: 100px;
 	padding-right: 10%;
 	padding-left: 10%;
 	border-radius: 50px;
@@ -340,7 +355,7 @@ h1 {
 
 .boksgala-button:hover {
 	background-color: #FFBCFF;
-	/* Lighter pink color on hover */
+	color: red;
 }
 
 @media screen and (max-width: 736px) {
@@ -675,9 +690,21 @@ h1 {
 
 @media screen and (max-width: 736px) {
 
+	h1 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+
 	h2 {
 		font-size: 2em;
 		line-height: 1.65em;
+		padding-top: 1.5em;
+	}
+
+	p {
+		font-size: 1em;
+		line-height: 1.65em;
+		padding-bottom: 1em;
 	}
 
 }
@@ -692,6 +719,11 @@ h3 {
 	h3 {
 		font-size: 1em;
 		line-height: 1.65em;
+	}
+
+	h4 {
+		font-size: 0.9em;
+		line-height: 1.5em;
 	}
 
 }
@@ -3121,7 +3153,7 @@ button:disabled,
 	opacity: 0.25;
 }
 
-@media screen and (max-width: 736px) {
+/* @media screen and (max-width: 736px) {
 
 	input[type="submit"],
 	input[type="reset"],
@@ -3131,6 +3163,13 @@ button:disabled,
 		height: 3.75em;
 		line-height: 3.75em;
 	}
+
+} */
+
+.button.primary.white:hover {
+	background-color: transparent !important;
+	color: red !important;
+	border-color: red !important;
 
 }
 
@@ -3284,7 +3323,7 @@ button:disabled,
 }
 
 .spotlight .content {
-	padding: 2em 12em 0.1em 12em;
+	padding: 5em 10em 0.1em 10em;
 	/* padding: auto; */
 	-moz-order: 2;
 	-webkit-order: 2;
@@ -3394,7 +3433,7 @@ button:disabled,
 }
 
 .wrapper>.inner p {
-	width: 60em;
+	width: 55em;
 	/* VERANDEREN */
 	margin: 0 auto;
 	position: relative;
@@ -3479,12 +3518,20 @@ button:disabled,
 }
 
 .wrapper.style6.special>.inner p {
-	width: 100%;
+	/* width: 100%; */
 	/* VERANDEREN */
 	margin: 0 auto;
 	position: relative;
 	max-width: 1100px;
-	width: 60em;
+	width: 55em;
+}
+
+@media screen and (max-width: 980px) {
+
+	.wrapper.style6.special>.inner p {
+		width: 100%;
+	}
+
 }
 
 .wrapper.style10 {
@@ -3583,11 +3630,11 @@ h3 {
 }
 
 .wrapper.style1 button:hover {
-	background-color: #50000A !important;
-	color: white !important;
+	/* background-color: #50000A !important; */
+	color: red !important;
 	border-color: red !important;
-	border-width: 1mm !important;
-
+	border-width: 0.5mm !important;
+	background-color: transparent !important;
 }
 
 .wrapper.style1 .filter-buttons button {
@@ -4176,7 +4223,7 @@ h3 {
 	margin-bottom: 3em;
 	text-align: center;
 	max-width: 1100px;
-	width: 60em;
+	width: 55em;
 }
 
 .wrapper.style7 {
@@ -4208,7 +4255,15 @@ h3 {
 	margin-bottom: 3em;
 	text-align: center;
 	max-width: 1100px;
-	width: 60em;
+	width: 55em;
+}
+
+@media screen and (max-width: 736px) {
+
+	.wrapper.style7 header.major p {
+		width: 100%;
+	}
+
 }
 
 .wrapper.style8 {
@@ -4259,6 +4314,17 @@ h3 {
 .wrapper.style8.two {
 	background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0) 100%);
 	height: 400px;
+}
+
+
+.wrapper.style10 header.major h1,
+h4 {
+	/* color: #50000A; */
+	width: 80%;
+	margin: auto;
+	margin-bottom: 3em;
+	text-align: center;
+	max-width: 1100px;
 }
 
 .colors h2 {
@@ -4656,6 +4722,13 @@ body.is-menu-visible #menu {
 	border: 0;
 }
 
+@media screen and (max-width: 736px) {
+
+	iframe {
+		width: 100%;
+	}
+
+}
 
 /* if on phone, change size */
 @media screen and (max-width: 736px) {
