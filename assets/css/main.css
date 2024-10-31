@@ -367,6 +367,10 @@ footer.thema {
 	background-color: #50000A !important;
 }
 
+footer.partners {
+	background-color: white;
+}
+
 footer {
 	background-color: #FFBCFF
 }
@@ -3446,7 +3450,7 @@ button:disabled,
 .wrapper.style8.special>.inner {
 	margin: 0 auto;
 	position: relative;
-	max-width: 1100px;
+	max-width: 1000px;
 }
 
 .wrapper.style1.special>.inner {
@@ -3456,11 +3460,11 @@ button:disabled,
 }
 
 .wrapper.style1.special.partners>.inner {
-	max-width: 1100px;
+	max-width: 1000px;
 }
 
 .wrapper.style10.special.partners>.inner {
-	max-width: 1100px;
+	max-width: 1000px;
 	text-align: center;
 }
 
