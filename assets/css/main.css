@@ -4434,6 +4434,22 @@ h4 {
 	width: 30em;
 }
 
+@media screen and (max-width: 736px) {
+
+	.wrapper.style10 header.major h4 {
+		width: 100%;
+	}
+
+	/* .wrapper.style10 header.major h1 {
+		font-size: 2em;
+	} */
+
+	.wrapper h1 {
+		font-size: 2em;
+	}
+
+}
+
 .colors h2 {
 	/* font-size: 1.5em; */
 	color: white;
@@ -4543,6 +4559,33 @@ h4 {
 	text-decoration-thickness: 0.2em;
 }
 
+/* Body styles */
+#menuDemo {
+	text-align: center;
+	padding: 30px 8px;
+}
+
+/* Hide menu and icon on larger screens */
+#cssmenu,
+.menu-icon-wrapper {
+	display: none;
+}
+
+/* Show menu and icon only on mobile */
+@media (max-width: 768px) {
+	.menu-icon-wrapper {
+		display: block;
+	}
+
+	#cssmenu {
+		display: none;
+		/* Initially hidden until icon click */
+	}
+
+	#cssmenu.active {
+		display: block;
+	}
+}
 
 @media screen and (max-width: 736px) {
 
@@ -4553,42 +4596,6 @@ h4 {
 }
 
 @media (max-width: 960px) {
-
-	/* Hamburger Button Container */
-	.hamburger-container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 50px;
-		/* Expanded clickable area */
-		height: 50px;
-		/* Expanded clickable area */
-		margin-right: 20px;
-		cursor: pointer;
-	}
-
-	.hamburger {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		width: 30px;
-		height: 24px;
-		transition: transform 0.3s ease;
-	}
-
-	.hamburger div {
-		background-color: #fff;
-		height: 3px;
-		width: 100%;
-		border-radius: 5px;
-		transition: all 0.3s ease;
-	}
-
-	/* When the hamburger is active, rotate the whole element */
-	.hamburger.active {
-		transform: rotate(90deg);
-		/* Rotate the entire icon by 90 degrees */
-	}
 
 	/* Hide menu by default */
 	#menu ul {
