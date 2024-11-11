@@ -127,6 +127,62 @@ section {
 	display: block;
 }
 
+/* Global custom cursor */
+*,
+*::before,
+*::after,
+html,
+body,
+div,
+iframe,
+span,
+a,
+button,
+input,
+textarea,
+select {
+	cursor: url("../../images/Wapen-Nereus.png"), auto;
+}
+
+/* Custom cursor for clickable elements */
+a:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+textarea:hover,
+iframe:hover,
+select:hover {
+	cursor: url("../../images/Wapen-Nereus.png"), pointer;
+}
+
+a:active,
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+textarea:active,
+iframe:active,
+select:active {
+	cursor: url("../../images/Wapen-Nereus.png"), pointer;
+}
+
+a:focus,
+button:focus,
+input:focus,
+iframe:focus,
+textarea:focus,
+select:focus {
+	cursor: url("../../images/Wapen-Nereus.png"), pointer;
+}
+
+/* Disabled state */
+button:disabled,
+input:disabled,
+textarea:disabled,
+iframe:disabled,
+select:disabled {
+	cursor: not-allowed;
+}
+
 body {
 	line-height: 1;
 	background: url("../../images/nereus_rood.jpg");
@@ -225,6 +281,11 @@ h1 {
 	height: 200px;
 	object-fit: cover;
 	border-radius: 25px;
+}
+
+.event-card.gold img {
+	border-color: #0000FF;
+	border: 5px solid #FFD700;
 }
 
 .event-card h3 {
@@ -2349,7 +2410,7 @@ header.major h4,
 header.major h5,
 header.major h6 {
 	/* border-bottom: solid 2px #fff; */
-	display: inline-block;
+	/* display: inline-block; */
 	/* padding-bottom: 1em; */
 	position: relative;
 }
@@ -3570,12 +3631,35 @@ button:disabled,
 	background-color: #ffffff00;
 }
 
+.transition {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	/* Ensures it appears above the banner content */
+	background: linear-gradient(0deg, #50000A 0%, rgba(255, 255, 255, 0) 100%);
+	pointer-events: none;
+	/* Allows interactions with content below */
+}
+
+
 .wrapper.style1.special {
 	border-bottom-left-radius: 100px;
 	border-bottom-right-radius: 100px;
 	width: 100%;
 	padding: 2em;
 }
+
+.wrapper.style1.low {
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	width: 100%;
+	padding: 2em;
+}
+
+
 
 .wrapper.style1.special .event-container {
 	display: flex;
@@ -4012,13 +4096,31 @@ h3 {
 }
 
 .wrapper.style6.two {
-	background: linear-gradient(0deg, #50000A 0%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0) 100%);
+	height: 600px;
+}
+
+.wrapper.style4.white {
+	background: linear-gradient(0deg, rgb(255, 189, 255) 0%, rgba(255, 255, 255, 0) 100%);
+	height: 400px;
+}
+
+.wrapper.style6.white {
+	background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0) 100%);
 	height: 600px;
 }
 
 @media screen and (max-width: 980px) {
 
 	.wrapper.style4.two {
+		height: 250px;
+	}
+
+}
+
+@media screen and (max-width: 980px) {
+
+	.wrapper.style6.white {
 		height: 250px;
 	}
 
@@ -4320,11 +4422,16 @@ h3 {
 .wrapper.style10 header.major h1,
 h4 {
 	/* color: #50000A; */
-	width: 80%;
+	/* width: 80%; */
 	margin: auto;
 	margin-bottom: 3em;
 	text-align: center;
 	max-width: 1100px;
+}
+
+.wrapper.style10 header.major h4 {
+	max-width: 1100px;
+	width: 30em;
 }
 
 .colors h2 {
@@ -4807,7 +4914,6 @@ body.is-menu-visible #menu {
 	text-align: center;
 	/* GROTESK !!! met of zonder */
 	/* padding: 3em 3em 3em 3em; */
-
 }
 
 #banner h2 {
