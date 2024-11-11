@@ -3727,6 +3727,7 @@ h3 {
 	border-color: red;
 	border-width: 0.5mm;
 	/* border-width: 3em; */
+	margin-bottom: 1em;
 }
 
 .wrapper.style1 .filter-buttons button:hover {
