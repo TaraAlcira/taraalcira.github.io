@@ -3660,11 +3660,9 @@ button:disabled,
 	padding: 2em;
 }
 
-
-
 .wrapper.style1.special .event-container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	width: 100%;
 	text-align: left;
 }

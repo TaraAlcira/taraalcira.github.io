@@ -1,8 +1,26 @@
+@font-face {
+	font-family: 'Sharp Grotesk';
+	src: url('../fonts/SharpGrotesk-Bold25.otf') format('opentype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Sharp Grotesk';
+	src: url('../fonts/SharpGrotesk-Book20.otf') format('opentype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Sharp Grotesk';
+	src: url('../fonts/SharpGrotesk-SemiBold20.otf') format('opentype');
+	font-weight: 600;
+}
+
 #cssmenu {
     width: auto;
     display: block;
     text-align: center;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Sharp Grotesk", sans-serif;
     line-height: 1.2;
 }
 
