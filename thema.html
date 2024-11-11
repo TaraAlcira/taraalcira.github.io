@@ -19,20 +19,8 @@
             <nav id="nav">
                 <ul>
                     <li class="special">
-                        <!-- Hamburger Button -->
-                        <div class="hamburger-container">
-                            <div class="hamburger">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                        </div>
-                        <!-- Navigation Menu -->
                         <div id="menu">
                             <ul>
-                                <!-- <li><a href="#">
-                                        Club van 140
-                                    </a></li> -->
                                 <li><a href="index.html">Fiducie</a></li>
                                 <li><a href="programma.html">Programma</a></li>
                                 <li><a href="thema.html" class="active">Thema</a></li>
@@ -42,6 +30,50 @@
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
+
+                        <div id="menuDemo">
+                            <!-- Menu icon for mobile -->
+                            <div class="menu-icon-wrapper">
+                                <div class="menu-icon" onclick="toggleCssMenu(this)">
+                                    <div class="three-line">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- The CSS menu -->
+                            <div id="cssmenu">
+                                <ul>
+                                    <li><a href="index.html">Fiducie</a></li>
+                                    <li><a href="programma.html">Programma</a></li>
+                                    <li><a href="thema.html" class="active">Thema</a></li>
+                                    <li><a href="media.html">Media</a></li>
+                                    <li><a href="reunisten.html">Reünisten</a></li>
+                                    <li><a href="partners.html">Partners</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- JavaScript to toggle menu -->
+                            <script>
+                                function toggleCssMenu(icon) {
+                                    var cssmenu = document.getElementById('cssmenu');
+                                    if (icon.className.indexOf('active') == -1) {
+                                        icon.className = 'menu-icon active';
+                                        cssmenu.style.display = "block";
+                                        setTimeout(function () { cssmenu.className = 'active'; }, 0);
+                                    }
+                                    else {
+                                        icon.className = 'menu-icon';
+                                        cssmenu.className = '';
+                                        setTimeout(function () { cssmenu.style.display = "none"; }, 411);
+                                    }
+                                }
+                            </script>
+                        </div>
+
                     </li>
                 </ul>
             </nav>
