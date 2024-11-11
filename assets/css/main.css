@@ -285,7 +285,8 @@ h1 {
 
 .event-card.gold img {
 	border-color: #0000FF;
-	border: 5px solid #FFD700;
+	border: 8px solid #FFD700;
+	border-image: url(/images/goud-modified-2.png) 30 stretch;
 }
 
 .event-card h3 {
