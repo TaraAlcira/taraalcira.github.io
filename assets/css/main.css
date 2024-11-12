@@ -261,19 +261,33 @@ h1 {
 
 .event-container {
 	display: flex;
-	justify-content: space-between;
-	/* max-width: 1000px;   */
-	/* max-width: 100%; */
-	/* margin: 0 auto;   */
+	flex-wrap: wrap;
+	gap: 10px;
 }
 
 .event-card {
-	width: 33.33%;
+	flex: 1 1 calc(25% - 20px);
+	/* 4 items per row with gap */
+	box-sizing: border-box;
 	border: 5px;
 	border-radius: 10px;
 	overflow: wrap;
 	margin: 20px;
 	/* Add a margin of 20px around each event card */
+}
+
+@media (max-width: 960px) {
+	.event-card {
+		flex: 1 1 calc(50% - 20px);
+		/* 2 items per row on medium screens */
+	}
+}
+
+@media (max-width: 600px) {
+	.event-card {
+		flex: 1 1 100%;
+		/* 1 item per row on mobile */
+	}
 }
 
 .event-card img {
@@ -333,7 +347,7 @@ h1 {
 }
 
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 1050px) {
 	.event-container {
 		flex-direction: column;
 		width: 100%;
@@ -3727,6 +3741,8 @@ h3 {
 	border-width: 0.5mm;
 	/* border-width: 3em; */
 	margin-bottom: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
 }
 
 .wrapper.style1 .filter-buttons button:hover {

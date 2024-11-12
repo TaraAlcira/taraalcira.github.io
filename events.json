@@ -1,27 +1,50 @@
 [
     {
         "id": "1",
-        "title": "Skivakantie",
-        "date": "ZA 04-06",
+        "title": "Voorspaarborrel",
+        "date": "20-6-2024",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis ante hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis ante hendrerit.",
-        "image": "images/ski-vacation.jpg"
+        "image": "images/ski-vacation.jpg",
+        "category": "lustrumweek"
     },
     {
         "id": "2",
-        "title": "Kroketten eetwedstrijd",
-        "date": "VRIJ 24-08",
+        "title": "Themabekendmaking",
+        "date": "25-10-2024",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis ante hendrerit.",
-        "image": "images/eating-contest.jpg"
+        "image": "images/eating-contest.jpg",
+        "category": "lustrumweek"
     },
     {
         "id": "3",
-        "title": "Debat",
-        "date": "WOE 24-6",
+        "title": "DIES",
+        "date": "15-12-2024",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis ante hendrerit.",
-        "image": "images/debate.jpg"
+        "image": "images/debate.jpg",
+        "category": "lustrumweek"
+    },
+    {
+        "id": "4",
+        "title": "Openingsfeest",
+        "date": "10-12-2024",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis.",
+        "image": "images/food-festival.jpg",
+        "category": "reunisten"
+    },
+    {
+        "id": "5",
+        "title": "Lustrumgala",
+        "date": "20-12-2024",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis, consectetur adipiscing elit. Sed maximus ligula quis.",
+        "image": "images/food-festival.jpg",
+        "category": "reunisten"
+    },
+    {
+        "id": "6",
+        "title": "Lustrum wispo",
+        "date": "31-1-2025 - 9-02-2025",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis, consectetur adipiscing elit. Sed maximus ligula quis.",
+        "image": "images/food-festival.jpg",
+        "category": "reunisten"
     }
-
-    
-
-
 ]
