@@ -141,7 +141,7 @@ button,
 input,
 textarea,
 select {
-	cursor: url("../../images/Wapen-Nereus.png"), auto;
+	cursor: url("../../images/mouse.svg"), auto;
 }
 
 /* Custom cursor for clickable elements */
@@ -152,7 +152,7 @@ input[type="button"]:hover,
 textarea:hover,
 iframe:hover,
 select:hover {
-	cursor: url("../../images/Wapen-Nereus.png"), pointer;
+	cursor: url("../../images/mouse.svg"), pointer;
 }
 
 a:active,
@@ -162,7 +162,7 @@ input[type="button"]:active,
 textarea:active,
 iframe:active,
 select:active {
-	cursor: url("../../images/Wapen-Nereus.png"), pointer;
+	cursor: url("../..images/mouse.svg"), pointer;
 }
 
 a:focus,
@@ -171,7 +171,7 @@ input:focus,
 iframe:focus,
 textarea:focus,
 select:focus {
-	cursor: url("../../images/Wapen-Nereus.png"), pointer;
+	cursor: url("../..images/mouse.svg"), pointer;
 }
 
 /* Disabled state */
@@ -267,13 +267,11 @@ h1 {
 
 .event-card {
 	flex: 1 1 calc(25% - 20px);
-	/* 4 items per row with gap */
 	box-sizing: border-box;
 	border: 5px;
 	border-radius: 10px;
 	overflow: wrap;
 	margin: 20px;
-	/* Add a margin of 20px around each event card */
 }
 
 @media (max-width: 960px) {
@@ -3556,6 +3554,17 @@ button:disabled,
 	max-width: 1100px;
 }
 
+.wrapper.style6.special.media>.inner h2 {
+	color: white;
+	text-align: center;
+}
+
+.wrapper.style6.special.media>.inner h3 {
+	color: red;
+	max-width: 1100px;
+	text-align: center;
+}
+
 .wrapper.style7.special>.inner {
 	margin: 0 auto;
 	position: relative;
@@ -4852,9 +4861,19 @@ body.is-menu-visible #menu {
 	border: 0;
 }
 
+blockquote {
+	width: auto;
+	display: table;
+	margin: 0 auto;
+}
+
 @media screen and (max-width: 736px) {
 
 	iframe {
+		width: 100%;
+	}
+
+	blockquote {
 		width: 100%;
 	}
 
@@ -4902,7 +4921,8 @@ body.is-menu-visible #menu {
 	width: 2500px;
 	height: auto;
 	display: block;
-	transform: translateX(0);
+	/* transform: translateX(0); */
+	transform: translateX(-100%); /* Adjust this value as needed */
 	z-index: 1;
 }
 
@@ -5344,7 +5364,7 @@ body.landing #page-wrapper.programma {
 }
 
 body.landing #page-wrapper.media {
-	background-image: url("../../images/debate.jpg");
+	background-image: url("../../images/media.jpeg");
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
