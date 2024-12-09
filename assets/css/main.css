@@ -387,8 +387,10 @@ h1 {
 	clip-path: circle();
 }
 
-.commissielid h4 {
+.commissielid h4,
+h1 {
 	margin-bottom: 0.5em !important;
+	width: 100% !important;
 }
 
 .commissielid h3 {
@@ -419,6 +421,74 @@ h1 {
 		width: 100%;
 		/* Full width for each member on very small screens */
 	}
+}
+
+/* Styling for the contact section */
+
+
+.contact-section {
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	max-width: 400px;
+	text-align: center;
+}
+
+.contact-section h2 {
+	font-size: 24px;
+	margin-bottom: 15px;
+	color: #333;
+}
+
+.contact-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.contact-list li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+.contact-list li:last-child {
+	margin-bottom: 0;
+}
+
+.contact-list a {
+	margin-left: 10px;
+	color: #4CAF50;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.contact-list a:hover {
+	color: #388E3C;
+}
+
+/* Icon styling */
+.icon {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-size: cover;
+}
+
+.icon.email {
+	background-image: url('path-to-your-email-icon.png');
+}
+
+.icon.whatsapp {
+	background-image: url('path-to-your-whatsapp-icon.png');
+}
+
+.icon.instagram {
+	background-image: url('path-to-your-instagram-icon.png');
 }
 
 
