@@ -3668,6 +3668,10 @@ button:disabled,
 	/* Allows interactions with content below */
 }
 
+.transition.index {
+	background: linear-gradient(0deg, #FFBCFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+
 
 .wrapper.style1.special {
 	border-bottom-left-radius: 100px;
@@ -4922,7 +4926,8 @@ blockquote {
 	height: auto;
 	display: block;
 	/* transform: translateX(0); */
-	transform: translateX(-100%); /* Adjust this value as needed */
+	transform: translateX(-100%);
+	/* Adjust this value as needed */
 	z-index: 1;
 }
 
@@ -4976,22 +4981,6 @@ blockquote {
 	z-index: 1;
 }
 
-/* #banner h2:before, #banner h2:after {
-				-moz-transition: width 0.85s ease;
-				-webkit-transition: width 0.85s ease;
-				-ms-transition: width 0.85s ease;
-				transition: width 0.85s ease;
-				-moz-transition-delay: 0.25s;
-				-webkit-transition-delay: 0.25s;
-				-ms-transition-delay: 0.25s;
-				transition-delay: 0.25s;
-				background: #fff;
-				content: '';
-				display: block;
-				height: 2px;
-				position: absolute;
-				width: 100%;
-			} */
 
 #banner h2:before {
 	top: 0;
