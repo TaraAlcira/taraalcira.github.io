@@ -107,27 +107,6 @@
                         <br>
                         <br>
                         <h1>Commissieleden</h1>
-                        <!-- <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Sed maximus ligula quis ante hendrerit, nec
-                            semper libero tristique. Etiam pharetra non ligula
-                            eu iaculis. Sed eu feugiat sem. Donec pretium auctor
-                            est sit amet fermentum. Donec molestie lectus massa,
-                            ac bibendum est sodales pharetra. Mauris malesuada
-                            pellentesque lobortis. Morbi pretium malesuada
-                            porttitor. Praesent porta diam nunc, eget tempor
-                            velit venenatis ac. Morbi fringilla dapibus mauris
-                            vel sollicitudin. Fusce pellentesque, mi et
-                            ultricies ultrices, odio magna tristique nunc, ut
-                            eleifend metus turpis in tellus. Orci varius natoque
-                            penatibus et magnis dis parturient montes, nascetur
-                            ridiculus mus. Quisque posuere et felis sed feugiat.
-                            Fusce elementum sem sit amet est gravida
-                            condimentum. Aenean porta iaculis neque, vel
-                            tincidunt nunc laoreet ac.
-                        </p> -->
-
-                        <!-- insert pictures -->
 
                         <div class="commissieleden">
                             <div class="commissielid">
@@ -299,86 +278,69 @@
             </div>
         </div>
 
-        <footer class="partners">
-            <div class="foot">
-                <div class="foot thema">
-                    <div class="footer-container">
-                        <div class="footer-column">
-                            <h2>Fiducie</h2>
-                            <br>
-                            <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</strong></p>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
+
+        <div class="special wrap faq">
+            <section id="one" class="wrapper style1">
+                <div class="inner faq">
+                    <header class="major">
+                        <br>
+                        <br>
+                        <h1>FAQ</h1>
+
+                        <div class="questions">
+                            <div class="question white">
+                                <h3>Wanneer is het Lustrum?</h3>
+                                <p>De Lustrumweek vindt plaats van 22 tot 29 augustus 2021.</p>
+
+                            </div>
+
+                            <div class="question white">
+                                <h3>Wat is de dresscode voor de evenementen?</h3>
+                                <p>Elke dag heeft een specifieke dresscode die vermeld staat in het programma.</p>
+                            </div>
+                            <div class="question white">
+                                <h3>Zijn de evenementen toegankelijk voor niet-leden?</h3>
+                                <p>De meeste evenementen zijn alleen voor leden, maar er zijn enkele open activiteiten.
+                                    Raadpleeg het programma voor details.</p>
+                            </div>
                         </div>
-                        <div class="footer-column">
-                            <h2>Contact</h2>
-                            <br>
-                            <p><strong>Heb je vragen over het lustrum, ben je je roeiboot kwijt, of je fietssleutel.
-                                    Stuur
-                                    ons een berichtje en lees de FAQ:</strong></p>
-                            <br>
 
 
-                            <p><strong>A.S.R. Nereus</strong></p>
-                            <p>Amsteldijk 130A</p>
-                            <p>1078 RT, Amsterdam</p>
-                            <!-- call -->
-                            <p><strong>Whatsapp:</strong> +31 6 19001334
-                            </p>
-                            <!-- email -->
-                            <p><strong>Email:</strong> lustrum@nereus.nl</p>
 
-                        </div>
-                        <div class="footer-column">
-                            <h2>Sponsoren</h2>
-                            <br>
-                            <!-- Add logos or any other sponsor information here -->
-                        </div>
-                    </div>
+                    </header>
                 </div>
+            </section>
 
-                <div class="footer-bottom">
-                    <p>ASR NEREUS</p>
-                    <p>DESIGN: BUREAU GROTESK</p>
-                </div>
-                <!-- <div class="social-media-icons">  
-                         <img src="facebook-icon.png" alt="Facebook Icon">  
-                         <img src="twitter-icon.png" alt="Twitter Icon">  
-                         <img src="instagram-icon.png" alt="Instagram Icon">   -->
-                <!--   Add more social media icons as needed -->
-                <!-- </div>   -->
-        </footer>
+            <div id="footer-placeholder"></div>
 
-        <!-- <div id="footer-placeholder"></div> -->
+            <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script>
+                // Load footer content from footer.html
+                document.addEventListener("DOMContentLoaded", function () {
+                    fetch("footer.html")
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById("footer-placeholder").innerHTML = data;
+                        });
+                });
+            </script>
+
+        </div>
 
         <!-- Scripts -->
-        <!-- <script src="assets/js/jquery.min.js"></script>
-        <script>
-            // Load footer content from footer.html
-            document.addEventListener("DOMContentLoaded", function () {
-                fetch("footer_pink.html")
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById("footer-placeholder").innerHTML = data;
-                    });
-            });
-        </script> -->
-
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/filter.js"></script>
-    <script src="assets/js/slinger.js"></script>
-    <script src="assets/js/banner.js"></script>
-    <!-- <script src="assets/js/menu.js"></script> -->
-    <script src="assets/js/nav-bar.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+        <script src="assets/js/filter.js"></script>
+        <script src="assets/js/slinger.js"></script>
+        <script src="assets/js/banner.js"></script>
+        <!-- <script src="assets/js/menu.js"></script> -->
+        <script src="assets/js/nav-bar.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
 
 
 </body>
