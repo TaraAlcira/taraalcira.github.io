@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "title": "Voorspaarborrel",
+        "title": "Voorspaar borrel",
         "date": "20-6-2024",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis ante hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis ante hendrerit.",
         "image": "images/ski-vacation.jpg",
@@ -9,7 +9,7 @@
     },
     {
         "id": "2",
-        "title": "Themabekendmaking",
+        "title": "Thema bekendmaking",
         "date": "25-10-2024",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis ante hendrerit.",
         "image": "images/eating-contest.jpg",

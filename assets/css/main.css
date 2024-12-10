@@ -265,6 +265,13 @@ h1 {
 	gap: 10px;
 }
 
+.event-container h2 {
+	overflow-wrap: break-word;
+	/* Ensures long words wrap */
+	word-wrap: break-word;
+	/* Legacy version for older browsers */
+}
+
 .event-card {
 	flex: 1 1 calc(25% - 20px);
 	box-sizing: border-box;
@@ -273,6 +280,8 @@ h1 {
 	overflow: wrap;
 	margin: 20px;
 }
+
+
 
 @media (max-width: 960px) {
 	.event-card {
