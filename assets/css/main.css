@@ -281,8 +281,6 @@ h1 {
 	margin: 20px;
 }
 
-
-
 @media (max-width: 960px) {
 	.event-card {
 		flex: 1 1 calc(50% - 20px);
@@ -3736,6 +3734,13 @@ button:disabled,
 
 .wrapper.style6.special.media>.inner.feedback h4 {
 	color: white;
+}
+
+.instagram-media {
+	display: block !important;
+	/* Ensures it behaves as a block element */
+	margin: 30px auto !important;
+	/* Horizontally center the blockquote */
 }
 
 .wrapper.style7.special>.inner {
