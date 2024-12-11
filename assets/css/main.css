@@ -142,6 +142,7 @@ input,
 textarea,
 select {
 	cursor: url("../../images/mouse.svg") 16 16, auto;
+	/* cursor: none; */
 }
 
 /* Custom cursor for clickable elements */
@@ -153,6 +154,7 @@ textarea:hover,
 iframe:hover,
 select:hover {
 	cursor: url("../../images/mouse.svg") 16 16, pointer;
+	/* cursor: none; */
 }
 
 a:active,
@@ -163,6 +165,7 @@ textarea:active,
 iframe:active,
 select:active {
 	cursor: url("../..images/mouse.svg") 16 16, pointer;
+	/* cursor: none; */
 }
 
 a:focus,
@@ -172,6 +175,7 @@ iframe:focus,
 textarea:focus,
 select:focus {
 	cursor: url("../..images/mouse.svg") 16 16, pointer;
+	/* cursor: none; */
 }
 
 /* Disabled state */
@@ -180,12 +184,29 @@ input:disabled,
 textarea:disabled,
 iframe:disabled,
 select:disabled {
-	cursor: not-allowed;
+	/* cursor: not-allowed; */
+	cursor: url("../..images/mouse.svg") 16 16, pointer;
+	/* cursor: none; */
 }
 
 body {
 	line-height: 1;
 	background: url("../../images/nereus_rood.jpg");
+}
+
+.cursor {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	background-color: #FF0000;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+	pointer-events: none;
+	z-index: 1000;
+	transform: translate(-50%, -50%);
+	transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease;
 }
 
 ol,
@@ -402,12 +423,10 @@ h1 {
 
 .commissielid {
 	text-align: center;
-	width: calc(25% - 30px);
-	/* Four members per row */
-	/* background: #f8f8f8; */
-	/* padding: 20px 10px; */
+	width: calc(33.333% - 30px);
 	border-radius: 10px;
 }
+
 
 .commissielid img {
 	object-fit: cover;
