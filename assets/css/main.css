@@ -141,7 +141,7 @@ button,
 input,
 textarea,
 select {
-	cursor: url("../../images/mouse.svg"), auto;
+	cursor: url("../../images/mouse.svg") 16 16, auto;
 }
 
 /* Custom cursor for clickable elements */
@@ -152,7 +152,7 @@ input[type="button"]:hover,
 textarea:hover,
 iframe:hover,
 select:hover {
-	cursor: url("../../images/mouse.svg"), pointer;
+	cursor: url("../../images/mouse.svg") 16 16, pointer;
 }
 
 a:active,
@@ -162,7 +162,7 @@ input[type="button"]:active,
 textarea:active,
 iframe:active,
 select:active {
-	cursor: url("../..images/mouse.svg"), pointer;
+	cursor: url("../..images/mouse.svg") 16 16, pointer;
 }
 
 a:focus,
@@ -171,7 +171,7 @@ input:focus,
 iframe:focus,
 textarea:focus,
 select:focus {
-	cursor: url("../..images/mouse.svg"), pointer;
+	cursor: url("../..images/mouse.svg") 16 16, pointer;
 }
 
 /* Disabled state */
