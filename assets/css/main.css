@@ -5072,6 +5072,27 @@ body.is-menu-visible #menu {
 }
 
 /* Banner */
+
+/* Default: Show desktop banner */
+.desktop-banner {
+	display: block;
+}
+
+.mobile-banner {
+	display: none;
+}
+
+/* Mobile: Show mobile banner */
+@media (max-width: 768px) {
+	.desktop-banner {
+		display: none;
+	}
+
+	.mobile-banner {
+		display: block;
+	}
+}
+
 .banner-container {
 	position: relative;
 	width: 100%;
@@ -5079,6 +5100,13 @@ body.is-menu-visible #menu {
 	/* height: 0; */
 	/* Adjust the height as needed */
 	overflow: wrap;
+}
+
+/* Hide the transition div on mobile */
+@media (max-width: 768px) {
+	.transition.index {
+		display: none;
+	}
 }
 
 /* video's */
