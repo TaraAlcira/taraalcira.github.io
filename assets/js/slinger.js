@@ -4,9 +4,11 @@ const images = container.querySelectorAll('img');
 let lastScrollPosition = 0;
 const imageWidth = images[0].offsetWidth;
 
-// Set the initial position of the images to start further to the right
+const startOffset = window.innerWidth * 0.82; 
+
+// Set the initial position of the images to start off-screen to the right, but with the adjusted offset
 images.forEach((image, index) => {
-  image.style.transform = `translateX(${index * imageWidth + window.innerWidth}px)`; // Start off-screen to the right
+  image.style.transform = `translateX(${index * imageWidth + startOffset}px)`; 
 });
 
 // Move the images horizontally as the user scrolls vertically
@@ -19,8 +21,7 @@ window.addEventListener('scroll', () => {
 
   // Adjust the position of the images as the user scrolls
   images.forEach((image, index) => {
-    // Move images to the left but start further to the right
-    image.style.transform = `translateX(${-(horizontalScrollPosition + (index * imageWidth)) + window.innerWidth}px)`;
+    image.style.transform = `translateX(${-(horizontalScrollPosition + (index * imageWidth)) + startOffset}px)`;
   });
 
   lastScrollPosition = scrollPosition;

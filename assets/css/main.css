@@ -2610,13 +2610,13 @@ header.major p {
 	top: 0;
 }
 
-@media screen and (max-width: 736px) {
+/* @media screen and (max-width: 736px) {
 
 	header.major {
 		margin: 0 0 2em 0;
 	}
 
-}
+} */
 
 @media screen and (max-width: 980px) {
 
