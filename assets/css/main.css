@@ -3687,6 +3687,7 @@ button:disabled,
 	margin: 0 auto;
 	position: relative;
 	max-width: 800px;
+	padding: 40px;
 }
 
 .wrapper>.inner img {
@@ -3855,7 +3856,7 @@ button:disabled,
 	border-bottom-left-radius: 100px;
 	border-bottom-right-radius: 100px;
 	width: 100%;
-	padding: 2em;
+	padding: 0em;
 }
 
 .wrapper.style1.low {
@@ -4051,6 +4052,7 @@ h3 {
 
 	.wrapper.style1 header.major p {
 		width: 100%;
+		padding: 2em;
 	}
 
 }
@@ -4749,7 +4751,7 @@ h4 {
 	.wrapper img {
 		width: 100%;
 		/* Ensure the image fits within its container */
-		max-width: 100%;
+		/* max-width: 100%; */
 		/* Prevents it from exceeding its natural size */
 		height: auto;
 		/* Keeps the aspect ratio intact */
@@ -5165,9 +5167,9 @@ blockquote {
 /* if on phone, change size */
 @media screen and (max-width: 736px) {
 
-	.video-container {
+	/* .video-container {
 		padding-bottom: 100%;
-	}
+	} */
 
 	.video-container iframe {
 		height: 100%;
@@ -5208,12 +5210,13 @@ blockquote {
 	transform: translateX(-100%);
 	/* Adjust this value as needed */
 	z-index: 1;
+	padding: 20px;
 }
 
 @media screen and (max-width: 782px) {
 
 	.slinger img {
-		width: 820px;
+		width: 1500px;
 	}
 
 }
