@@ -5221,13 +5221,10 @@ blockquote {
 
 .slinger img {
 	position: relative;
-	/* left: 100; */
 	width: 3000px;
 	height: auto;
 	display: block;
-	/* transform: translateX(0); */
-	transform: translateX(-100%);
-	/* Adjust this value as needed */
+	transform: translateX(-150%);
 	z-index: 1;
 	padding: 20px;
 }
@@ -5235,7 +5232,8 @@ blockquote {
 @media screen and (max-width: 782px) {
 
 	.slinger img {
-		width: 1500px;
+		width: 3000px;
+		transform: translateX(-150%);
 	}
 
 }
@@ -5645,7 +5643,7 @@ body.landing #page-wrapper.fiducie {
 }
 
 body.landing #page-wrapper.programma {
-	background-image: url("../../images/nereus_rood.jpg");
+	background-image: url("../../images/luco\ -1-3.jpg");
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
