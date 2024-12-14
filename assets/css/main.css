@@ -141,7 +141,7 @@ button,
 input,
 textarea,
 select {
-	cursor: url("../../images/mouse.svg") 16 16, auto;
+	cursor: auto;
 	/* cursor: none; */
 }
 
@@ -153,7 +153,7 @@ input[type="button"]:hover,
 textarea:hover,
 iframe:hover,
 select:hover {
-	cursor: url("../../images/mouse.svg") 16 16, pointer;
+	cursor: pointer;
 	/* cursor: none; */
 }
 
@@ -164,7 +164,7 @@ input[type="button"]:active,
 textarea:active,
 iframe:active,
 select:active {
-	cursor: url("../..images/mouse.svg") 16 16, pointer;
+	cursor: pointer;
 	/* cursor: none; */
 }
 
@@ -174,7 +174,7 @@ input:focus,
 iframe:focus,
 textarea:focus,
 select:focus {
-	cursor: url("../..images/mouse.svg") 16 16, pointer;
+	cursor: pointer;
 	/* cursor: none; */
 }
 
@@ -185,7 +185,7 @@ textarea:disabled,
 iframe:disabled,
 select:disabled {
 	/* cursor: not-allowed; */
-	cursor: url("../..images/mouse.svg") 16 16, pointer;
+	cursor: pointer;
 	/* cursor: none; */
 }
 
@@ -200,13 +200,13 @@ body {
 	left: 0;
 	width: 30px;
 	height: 30px;
-	background-color: #FF0000;
+	background-color: #FFBCFF;
 	border-radius: 50%;
-	box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+	box-shadow: 0 0 10px red;
 	pointer-events: none;
 	z-index: 1000;
 	transform: translate(-50%, -50%);
-	transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease;
+	transition: transform 1s ease, width 0.2s ease, height 0.2s ease;
 }
 
 ol,
@@ -5222,7 +5222,7 @@ blockquote {
 .slinger img {
 	position: relative;
 	/* left: 100; */
-	width: 2500px;
+	width: 3000px;
 	height: auto;
 	display: block;
 	/* transform: translateX(0); */
