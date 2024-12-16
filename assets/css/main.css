@@ -406,8 +406,9 @@ h1 {
 }
 
 .event-card.facebook img {
-	clip-path: xywh(0 5px 100% 75% round 15% 15%);
 	width: 300px;
+	/* border-radius: 15px; */
+	width: 100% !important;
 }
 
 /**** Commission Members Styling ****/
