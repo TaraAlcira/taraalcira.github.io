@@ -4,7 +4,7 @@ const images = container.querySelectorAll('img');
 let lastScrollPosition = 0;
 const imageWidth = images[0].offsetWidth;
 
-const startOffset = window.innerWidth * 1.2; 
+const startOffset = window.innerWidth * 0.8; 
 
 // Set the initial position of the images to start off-screen to the right, but with the adjusted offset
 images.forEach((image, index) => {
