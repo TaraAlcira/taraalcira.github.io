@@ -281,6 +281,46 @@ h1 {
 }
 
 .event-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	/* 3 cards per row if space allows */
+	gap: 20px;
+	/* Space between cards */
+}
+
+.event-card {
+	border-radius: 8px;
+	overflow: hidden;
+	text-align: center;
+	padding: 16px;
+	box-sizing: border-box;
+	/* Include padding in width */
+}
+
+.event-card img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 8px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 960px) {
+	.event-container {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		/* Adjust for smaller screens */
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.event-container {
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		/* Adjust for very small screens */
+	}
+}
+
+
+
+.event-container {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
@@ -3873,8 +3913,10 @@ h2 {
 .special.wrap.invis>.inner {
 	margin: 0 auto;
 	position: relative;
-	max-width: 1100px !important;
+	max-width: 1100px;
 }
+
+
 
 
 .transition {
@@ -3979,6 +4021,14 @@ h3 {
 .wrapper.style1.special.prog .event-container {
 	color: #50000A !important;
 }
+
+.wrapper.style1.special.prog>.inner {
+	margin: 0 auto;
+	position: relative;
+	max-width: 1100px;
+}
+
+
 
 .wrapper.style7.special .event-container {
 	display: flex;
