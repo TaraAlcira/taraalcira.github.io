@@ -3995,6 +3995,11 @@ h2 {
 	padding: 0em;
 }
 
+.wrapper.style1.special.prog {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
 .wrapper.style1.low {
 	border-top-left-radius: 100px;
 	border-top-right-radius: 100px;

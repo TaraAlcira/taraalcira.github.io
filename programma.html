@@ -86,7 +86,7 @@
         </section>
 
         <!-- One -->
-        <div class="special wrap invis">
+        <div class="special wrap">
             <section id="one" class="wrapper style1 special prog">
                 <div class="inner">
                     <header class="major">
@@ -122,73 +122,21 @@
             </section>
         </div>
 
-        <section id="cta" class="wrapper style4 two"></section>
-        <div class="inner">
-        </div>
-        </section>
+        <div id="footer-placeholder"></div>
 
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script>
+            // Load footer content from footer.html
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch("footer.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById("footer-placeholder").innerHTML = data;
+                    });
+            });
+        </script>
 
-        <footer>
-            <div class="foot">
-                <div class="foot thema">
-                    <div class="footer-container">
-                        <div class="footer-column">
-                            <h2>Fiducie</h2>
-                            <br>
-                            <p><strong>Het 28ste Lustrum van de A.S.R. Nereus staat in het thema van FIDUCIE. </strong>
-                            </p>
-                            <br>
-                            <p>De FI · DU · CIE (v) <br>
-                                1. gevoel dat iets of iemand zeker aan verwachtingen zal voldoen <br>
-                                2. vertrouwen (van Latijn, Fiducia)
-                            </p>
-                        </div>
-                        <div class="footer-column">
-                            <h2>Contact</h2>
-                            <br>
-                            <p><strong>Heb je vragen over het lustrum, ben je je roeiboot kwijt, of je fietssleutel.
-                                    Stuur
-                                    ons een berichtje en lees de veelgestelde vragen.</strong></p>
-                            <br>
-
-
-                            <p><strong>A.S.R. Nereus</strong></p>
-                            <p>Amsteldijk 130A</p>
-                            <p>1078 RT, Amsterdam</p>
-                            <!-- call -->
-                            <p><strong>Whatsapp: </strong><a href="tel:+31619001334">+31 6 19001334</a>
-                            </p>
-                            <!-- email -->
-                            <p><strong>Email: </strong> <a href="mailto:lustrumpartners@nereus.nl">lustrum@nereus.nl</p>
-                            </a>
-
-                        </div>
-                        <div class="footer-column">
-                            <h2>Partners</h2>
-                            <br>
-                            <p>
-                                <strong>Samenwerken?</strong><br>
-                                <br>
-                                Neem contact op via <a
-                                    href="mailto: lustrumpartners@nereus.nl">lustrumpartners@nereus.nl</a>
-                            </p>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-bottom">
-                    <p>ASR NEREUS</p>
-                    <p>DESIGN: BUREAU GROTESK</p>
-                </div>
-                <!-- <div class="social-media-icons">  
-                     <img src="facebook-icon.png" alt="Facebook Icon">  
-                     <img src="twitter-icon.png" alt="Twitter Icon">  
-                     <img src="instagram-icon.png" alt="Instagram Icon">   -->
-                <!--   Add more social media icons as needed -->
-                <!-- </div>   -->
-        </footer>
     </div>
 
     <!-- Scripts -->
