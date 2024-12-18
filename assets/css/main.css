@@ -431,7 +431,7 @@ h1 {
 
 .event-button.reunist:hover {
 	background-color: transparent;
-	color: red;
+	color: #1718FF;
 }
 
 @media screen and (max-width: 1050px) {
@@ -706,6 +706,10 @@ footer {
 
 footer.blue {
 	background-color: #0000FF;
+}
+
+footer.white {
+	background-color: white;
 }
 
 .foot {
@@ -3864,9 +3868,9 @@ h2 {
 	color: #1718FF;
 }
 
-.wrapper.style10.reunisten button:hover {
+/* .wrapper.style10.reunisten button:hover {
 	background-color: #1718FF;
-}
+} */
 
 
 
