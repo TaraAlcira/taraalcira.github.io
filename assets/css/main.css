@@ -3834,6 +3834,11 @@ button:disabled,
 	color: white;
 }
 
+.wrapper.style6.special.thema h3 {
+	color: white;
+	text-align: center;
+}
+
 .instagram-media {
 	display: block !important;
 	/* Ensures it behaves as a block element */
