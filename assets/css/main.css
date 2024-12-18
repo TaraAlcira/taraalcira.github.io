@@ -141,7 +141,7 @@ button,
 input,
 textarea,
 select {
-	cursor: url("../../images/roze_cirkel.png") 22 22, auto;
+	cursor: url("../../images/roze_cirkel.png") 16 16, auto;
 	/* cursor: none; */
 }
 
@@ -153,7 +153,7 @@ input[type="button"]:hover,
 textarea:hover,
 iframe:hover,
 select:hover {
-	cursor: url("../../images/roze_cirkel.png") 22 22, pointer;
+	cursor: url("../../images/roze_cirkel.png") 16 16, pointer;
 	/* cursor: none; */
 }
 
@@ -164,7 +164,7 @@ input[type="button"]:active,
 textarea:active,
 iframe:active,
 select:active {
-	cursor: url("../../images/roze_cirkel.png") 22 22, pointer;
+	cursor: url("../../images/roze_cirkel.png") 16 16, pointer;
 	/* cursor: none; */
 }
 
@@ -174,7 +174,7 @@ input:focus,
 iframe:focus,
 textarea:focus,
 select:focus {
-	cursor: url("../../images/roze_cirkel.png") 22 22, pointer;
+	cursor: url("../../images/roze_cirkel.png") 16 16, pointer;
 	/* cursor: none; */
 }
 
