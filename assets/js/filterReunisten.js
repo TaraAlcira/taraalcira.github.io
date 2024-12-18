@@ -32,7 +32,6 @@ fetch('events.json')
                 <img src="${event.image}" alt="${event.title}" />
                 <h2>${event.title}</h2>
                 <p>${event.description}</p>
-                <button class="event-button" onclick="redirectToEventDetails('${event.id}')">Bekijk event</button>
             `;
             eventContainer.appendChild(eventCard);
         });
@@ -52,3 +51,6 @@ function redirectToEventDetails(eventId) {
     console.log('Redirect to event with ID:', eventId);
     // Replace with your redirection logic
 }
+
+
+{/* <button class="event-button" onclick="redirectToEventDetails('${event.id}')">Bekijk event</button> */}

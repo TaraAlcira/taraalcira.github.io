@@ -291,7 +291,7 @@ h1 {
 .event-card {
 	border-radius: 8px;
 	overflow: hidden;
-	text-align: center;
+	/* text-align: center; */
 	padding: 16px;
 	box-sizing: border-box;
 	/* Include padding in width */
@@ -338,7 +338,8 @@ h1 {
 }
 
 .event-card {
-	flex: 1 1 calc(25% - 20px);
+	/* flex: 1 1 calc(25% - 20px); */
+	width: 320px;
 	box-sizing: border-box;
 	border: 5px;
 	border-radius: 10px;
@@ -405,7 +406,7 @@ h1 {
 	color: #50000A;
 	/* border: none; */
 	padding: 0px 20px;
-	margin: 10px;
+	/* margin: 10px; */
 	border-radius: 25px;
 	cursor: pointer;
 }
@@ -424,6 +425,14 @@ h1 {
 	background-color: transparent;
 }
 
+.event-button.reunist {
+	border-width: 0;
+}
+
+.event-button.reunist:hover {
+	background-color: transparent;
+	color: red;
+}
 
 @media screen and (max-width: 1050px) {
 	.event-container {
@@ -4158,7 +4167,7 @@ h3 {
 
 	.wrapper.style1 header.major p {
 		width: 100%;
-		padding: 2em;
+		/* padding: 2em; */
 	}
 
 }
