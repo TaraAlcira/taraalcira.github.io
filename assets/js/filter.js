@@ -11,7 +11,7 @@ fetch('events.json')
     .then(events => {
         const eventContainer = document.getElementById('eventContainer');
         
-        // Sort events by date, placing TBD events at the end
+        // Sort events by date, placing TBA events at the end
         events.sort((a, b) => {
             const dateA = parseDate(a.date)?.getTime() || Infinity;
             const dateB = parseDate(b.date)?.getTime() || Infinity;
@@ -39,7 +39,7 @@ fetch('events.json')
 // Function to format dates
 function formatDate(dateString) {
     const date = parseDate(dateString);
-    if (!date) return "TBD"; // Handle "TBD" or invalid dates
+    if (!date) return "TBA"; // Display "TBA" if the date is "TBD" or invalid
     const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
     return date.toLocaleDateString('nl-NL', options);
 }
