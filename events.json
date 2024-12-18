@@ -1,50 +1,178 @@
 [
     {
         "id": "1",
-        "title": "Voorspaar borrel",
+        "title": "Voorspaarborrel",
         "date": "20-6-2024",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis ante hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis ante hendrerit.",
-        "image": "images/ski-vacation.jpg",
-        "category": "lustrumweek"
+        "description": "Locatie: A.S.R. Nereus",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar"
     },
     {
         "id": "2",
-        "title": "Thema bekendmaking",
+        "title": "Themabekendmaking",
         "date": "25-10-2024",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis ante hendrerit.",
-        "image": "images/eating-contest.jpg",
-        "category": "lustrumweek"
+        "description": "Locatie: Sociëteit N.I.A. Zie uw mail voor de laatste informatie. Foto’s zijn te vinden bij ‘media’.",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar"
     },
     {
         "id": "3",
-        "title": "DIES",
+        "title": "DIES viering",
         "date": "15-12-2024",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis ante hendrerit.",
-        "image": "images/debate.jpg",
-        "category": "lustrumweek"
+        "description": "139 jaar A.S.R. Nereus. Zie uw mail voor de laatste informatie.",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar,reunisten"
     },
     {
         "id": "4",
         "title": "Openingsfeest",
-        "date": "10-12-2024",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis.",
-        "image": "images/food-festival.jpg",
-        "category": "reunisten"
+        "date": "9-12-2024",
+        "description": "Locatie: Chicago Social Club. Zie uw mail voor de laatste informatie. Foto’s zijn te vinden bij ‘media’.",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar,reunisten"
     },
     {
         "id": "5",
         "title": "Lustrumgala",
         "date": "20-12-2024",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis, consectetur adipiscing elit. Sed maximus ligula quis.",
-        "image": "images/food-festival.jpg",
-        "category": "reunisten"
+        "description": "Locatie: Hilton Hotel, Antwerpen. Zie uw mail voor de laatste informatie.",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar"
     },
     {
         "id": "6",
         "title": "Lustrum wispo",
         "date": "31-1-2025 - 9-02-2025",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus ligula quis, consectetur adipiscing elit. Sed maximus ligula quis.",
-        "image": "images/food-festival.jpg",
-        "category": "reunisten"
+        "description": "Locatie: Val Thorens",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar"
+    },
+    {
+        "id": "7",
+        "title": "Lustrumdriedaagse Ongemengddag",
+        "date": "23-04-2025",
+        "description": "Later meer informatie.",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar"
+    },
+    {
+        "id": "8",
+        "title": "Lustrumdriedaagse Kickboksgala",
+        "date": "24-04-2025",
+        "description": "Een sportieve uitdaging tijdens het XXVIIIe Lustrum! Check de site voor meer informatie. https://outofthebks.nl/nereus/",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar,extern"
+    },
+    {
+        "id": "9",
+        "title": "Lustrumdriedaagse MOKUMdag",
+        "date": "25-04-2025",
+        "description": "Later meer informatie.",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar,extern"
+    },
+    {
+        "id": "10",
+        "title": "Rally",
+        "date": "10-05-2025",
+        "description": "Later meer informatie.",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar,reunisten"
+    },
+    {
+        "id": "11",
+        "title": "Hardloop/fietsronde",
+        "date": "TBD",
+        "description": "Later meer informatie.",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar,reunisten"
+    },
+    {
+        "id": "12",
+        "title": "Openingsdag",
+        "date": "JULI",
+        "description": "Later meer informatie.",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar,lustrumweek"
+    },
+    {
+        "id": "13",
+        "title": "KNRSB dag",
+        "date": "TBD",
+        "description": "Later meer informatie.",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar,lustrumweek,extern"
+    },
+    {
+        "id": "14",
+        "title": "Familiedag",
+        "date": "TBD",
+        "description": "Later meer informatie.",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar,lustrumweek,reunisten,extern"
+    },
+    {
+        "id": "15",
+        "title": "Oudledendag",
+        "date": "TBD",
+        "description": "Later meer informatie.",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar,lustrumweek,reunisten"
+    },
+    {
+        "id": "16",
+        "title": "FURORE dag",
+        "date": "TBD",
+        "description": "Later meer informatie.",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar,lustrumweek"
+    },
+    {
+        "id": "17",
+        "title": "VVV'tjes dag",
+        "date": "TBD",
+        "description": "Later meer informatie.",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar,lustrumweek,extern"
+    },
+    {
+        "id": "18",
+        "title": "Chique dag",
+        "date": "TBD",
+        "description": "Later meer informatie.",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar,lustrumweek"
+    },
+    {
+        "id": "19",
+        "title": "Lustrumwedstrijden",
+        "date": "13-9-2025",
+        "description": "Locatie: A.S.R. Nereus. Later meer informatie.",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar,reunisten,extern"
+    },
+    {
+        "id": "20",
+        "title": "Almanakdoop",
+        "date": "TBD",
+        "description": "Later meer informatie.",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar,reunisten"
+    },
+    {
+        "id": "21",
+        "title": "DIES 2025",
+        "date": "10-12-2025",
+        "description": "140 jaar Nereus",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar,reunisten"
+    },
+    {
+        "id": "22",
+        "title": "Lustrumdiner",
+        "date": "TBD",
+        "description": "Later meer informatie.",
+        "image": "images/logo_event.png",
+        "category": "lustrumjaar,reunisten"
     }
 ]
