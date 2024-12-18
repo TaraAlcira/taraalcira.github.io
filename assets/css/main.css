@@ -728,6 +728,10 @@ footer.white {
 	background-color: white;
 }
 
+.pink {
+	background-color: #FFBCFF;
+}
+
 .foot {
 	background-color: #FFFFFF;
 	border-radius: 80px 80px 0 0;
@@ -3972,6 +3976,13 @@ h2 {
 .reunisten {
 	border-bottom-left-radius: 100px;
 	border-bottom-right-radius: 100px;
+	width: 100%;
+	padding: 0em;
+}
+
+.contact {
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
 	width: 100%;
 	padding: 0em;
 }
