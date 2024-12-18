@@ -3801,6 +3801,22 @@ button:disabled,
 	color: red;
 }
 
+.wrapper.style10.reunisten p {
+	color: #50000A;
+}
+
+.wrapper.style10.reunisten h1,
+h3,
+h2 {
+	color: #1718FF !important;
+}
+
+.wrapper.style10.reunisten button:hover {
+	background-color: #1718FF;
+}
+
+
+
 .wrapper.style6.special>.inner p {
 	/* width: 100%; */
 	/* VERANDEREN */
