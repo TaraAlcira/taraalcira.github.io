@@ -202,11 +202,16 @@ body {
 	height: 30px;
 	background-color: red;
 	border-radius: 50%;
-	/* box-shadow: 0 0 10px red; */
 	pointer-events: none;
 	z-index: 1000;
 	transform: translate(-50%, -50%);
 	transition: transform 1s ease, width 0.2s ease, height 0.2s ease;
+}
+
+@media screen and (max-width: 736px) {
+	#cursor {
+		display: none;
+	}
 }
 
 ol,
@@ -3257,6 +3262,7 @@ ul.icons.major li {
 #one header button {
 	display: inline-block;
 	vertical-align: middle;
+	margin: 0.5em;
 }
 
 .header-container {
@@ -4049,6 +4055,14 @@ h4 {
 	padding: 20px;
 }
 
+@media screen and (max-width: 736px) {
+
+	.questions {
+		padding: 0;
+	}
+
+}
+
 .question {
 	background-color: rgb(251, 0, 0);
 	border-radius: 25px;
@@ -4220,10 +4234,14 @@ h3 {
 
 	.wrapper.style1 header.major p {
 		width: 100%;
+
+	}
+
+	.text1 {
 		padding: 2em;
 	}
 
-	.wrapper.style1.special.prog header.major p {
+	.event-container p {
 		padding: 0em;
 	}
 
@@ -4904,6 +4922,7 @@ h4 {
 
 	.wrapper h1 {
 		font-size: 2em;
+		margin: 0.2em;
 	}
 
 }
@@ -4935,7 +4954,7 @@ h4 {
 	}
 
 	.wrapper img {
-		width: 100%;
+		/* width: 100%; */
 		/* Ensure the image fits within its container */
 		/* max-width: 100%; */
 		/* Prevents it from exceeding its natural size */
